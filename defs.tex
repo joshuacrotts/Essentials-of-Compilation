@@ -388,7 +388,7 @@
 \newcommand{\JMPIF}[2]{\key{(JmpIf}~#1~#2\key{)}}
 \newcommand{\RETQ}{\key{(Retq)}}
 \newcommand{\XPROGRAM}[2]{\LP\code{X86Program}~#1~#2\RP}
-\newcommand{\XPROGRAMDEFS}[2]{\LP\code{X86Program}~#1~#2\RP}
+\newcommand{\XPROGRAMDEFS}[2]{\LP\code{X86ProgramDefs}~#1~#2\RP}
 \newcommand{\BYTEREG}[1]{\key{(ByteReg}~#1\key{)}}
 \newcommand{\CDEF}[4]{\LP\key{define}~\LP#1~#2\RP\,\key{:}\,#3~#4\RP}
 \newcommand{\DEF}[5]{\LP\key{Def}~#1~#2~#3~#4~#5\RP}
@@ -411,7 +411,7 @@
 \newcommand{\POPQ}[1]{\key{Instr}\LP \skey{popq} \key{,} \LS #1 \RS \RP}
 \newcommand{\JMP}[1]{\key{Jump}\LP #1 \RP}
 \newcommand{\JMPIF}[2]{\key{JumpIf}\LP #1 \key{,} #2 \RP}
-\newcommand{\RETQ}{\key{Retq}\LP\RP}
+\newcommand{\RETQ}{\key{Instr}\LP \skey{retq} \key{,} \LS \RS \RP}
 % TODO: change \XPROGRAM to 1 parameter
 \newcommand{\XPROGRAM}[2]{\code{X86Program}\LP #2 \RP}
 \newcommand{\XPROGRAMDEFS}[1]{\code{X86ProgramDefs}\LP #1 \RP}
